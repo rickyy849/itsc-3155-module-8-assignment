@@ -3,7 +3,6 @@ from src.repositories.movie_repository import movie_repository_singleton
 
 app = Flask(__name__)
 
-
 @app.get('/')
 def index():
     return render_template('index.html')
