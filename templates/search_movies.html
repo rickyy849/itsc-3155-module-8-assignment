@@ -18,6 +18,8 @@
         function search()
         {
             var title = document.getElementById("movie-title");
+            var movie = get_movie_by_title(title);
+            document.getElementById("search-result").innerHTML = movie.rating;
         }
     </script>
 {% endblock %}
