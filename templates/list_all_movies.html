@@ -5,5 +5,20 @@
 {% block body %}
 <h1 class="mb-5">All Movies</h1>
 <p class="mb-3">See our list of movie ratings below</p>
-<!-- TODO: Feature 1 -->
+
+<table border="1">
+    <tr>
+        <th>Title</th>
+        <th>Director</th>
+        <th>Rating</th>
+    <tr>
+    {% for Movie in get_all_movies %}
+    <tr>
+        <td>{{ Movie['title']}}</td>
+        <td>{{ Movie['director']}}</td>
+        <td>{{ Movie['rating']}}</td>
+    </tr>
+    {% endfor %}  
+
+</table>  
 {% endblock %}
