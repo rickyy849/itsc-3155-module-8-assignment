@@ -1,4 +1,5 @@
 # TODO: Feature 3
+
 import pytest
 from src.repositories.movie_repository import movie_repository_singleton
 
@@ -15,3 +16,4 @@ def test_get_movie_by_title():
 
     assert search('Good Test') == 7;
     assert search('Bad Test') == -1;
+
